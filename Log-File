@@ -3851,9 +3851,9 @@ gradeabi_actual_final   U  | 1.7333   1.9868    -41.9         |  -2.68  0.007 | 
 . psgraph, bin(40)
 
 . 
-. graph export  "$figure\tavele_gap_main.png", as(png) replace
-(file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\tavele_gap_main.png not found)
-file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\tavele_gap_main.png saved as PNG format
+. graph export  "$figure\travel_gap_main.png", as(png) replace
+(file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\travel_gap_main.png not found)
+file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\travel_gap_main.png saved as PNG format
 
 . 
 . sum _pscore
