@@ -1,3 +1,13 @@
+This file consists of the results of my analysis of gap years. To jump to the corresponding analysis, use the search option and the following section names. The associated propensity score graphs can be found in the extra graphs folder. 
+*Effects on the choice between study and vocational training:
+*Overall gap year effects on students who choose to study:
+*Alternative specifications for robustness:
+*Travel during the gap year:
+*Preparation during the gap year:
+*Civil volunteering during the gap year:
+*Casual work  during the gap year:
+*Training:
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\log\Matching-Results.log
@@ -15,7 +25,7 @@
 . 
 . 
 . 
-. *Effects on choice between choosing to study or vocational training:
+*Effects on the choice between study and vocational training:
 
 . 
 . psmatch2 Gap_1_year $demo $future $personal $school if time_expabitur==1 & d_nopanel!=1 & idsch!=135037 & idsch!=135028, out(d_first_further_study) co
@@ -998,7 +1008,7 @@ file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\overall_gap_grade_
 . 
 . 
 . 
-. *Alternative specification for robustness
+. *Alternative specifications for robustness:
 
 . 
 . 
@@ -3413,7 +3423,7 @@ gradeabi_actual_final   U  | 1.9628   2.0103     -7.7         |  -1.00  0.317 | 
 . 
 . 
 . 
-. *Traveling during the gap year:
+. *Travel during the gap year:
 
 . 
 . psmatch2 Gap_1_year1 $demo $future $personal $school if time_expabitur==1 & d_nopanel!=1 & idsch!=135037 & idsch!=135028 & d_first_further_study==1, o
@@ -4057,7 +4067,7 @@ r(693);
 . 
 . 
 . 
-. *Results for traveling in the case of grades and dropouts are not useful as the number of treated observations is too few.
+.  *Results for traveling in the case of grades and dropouts are not useful as the number of treated observations is too small.
 
 . 
 . 
@@ -4904,7 +4914,7 @@ file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\preparation_gap_gr
      _pscore |        547    .0914077    .1593526   6.42e-07   .9244664
 
 . 
-. *Results for preparation in the case of grades and dropouts are not useful as the number of treated observations is too few.
+. *Results for preparation in the case of grades and dropouts are not useful because the number of treated observations is too small.
 
 . 
 . 
@@ -6346,12 +6356,12 @@ file Z:\Vorlagen\WilzekL001\Masterarbeit Lukas Wilzek\figures\casual_grade_and_d
      _pscore |        581    .0998279     .202201   7.57e-08   .9926902
 
 . 
-. *Results for casual work in the case of grades and dropouts are not useful as the number of treated observations is too few.
+. *Results for casual work in the case of grades and dropouts are not useful because the number of treated observations is too small.
 
 . 
 . 
 . 
-. **Training
+. *Training
 
 . 
 . 
